@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
     float vertical;
 
     public float speed = 20.0f;
+    public bool hasCloak = false;
+
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +25,9 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+        animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+        animator.SetFloat("Vertical", Input.GetAxis("Vertical"));
+        animator.SetBool("hasCloak", hasCloak);
     }
 
     private void FixedUpdate()
