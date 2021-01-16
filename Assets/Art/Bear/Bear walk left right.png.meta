@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: bd0771e88ef1b5e43b52b11d1872c207
+guid: 77dad37803f56d34792180ee17a8525c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 298057743205480822
-    second: cloak walk front_0
+      213: -4299144507308287876
+    second: Bear left clone walk clone (1)_0
   - first:
-      213: -3906540272164616290
-    second: cloak walk front_1
+      213: 3917519921456065504
+    second: Bear left clone walk clone (1)_1
   - first:
-      213: 3448319157223260166
-    second: cloak walk front_2
+      213: -2146451330910139550
+    second: Bear left clone walk clone (1)_2
+  - first:
+      213: -3285809429840648968
+    second: Bear left clone walk clone (1)_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,7 +73,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 128
+    maxTextureSize: 64
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -82,7 +85,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 128
+    maxTextureSize: 64
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -94,7 +97,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 128
+    maxTextureSize: 64
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -106,7 +109,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 128
+    maxTextureSize: 64
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -120,7 +123,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cloak walk front_0
+      name: Bear left clone walk clone (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7851d339de5654c0800000000000000
+      internalID: -4299144507308287876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear left clone walk clone (1)_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eba7e6dc93dd5630800000000000000
+      internalID: 3917519921456065504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear left clone walk clone (1)_2
       rect:
         serializedVersion: 2
         x: 0
@@ -134,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 679315230f9e22400800000000000000
-      internalID: 298057743205480822
+      spriteID: 26bcf6d03e54632e0800000000000000
+      internalID: -2146451330910139550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cloak walk front_1
+      name: Bear left clone walk clone (1)_3
       rect:
         serializedVersion: 2
         x: 32
@@ -155,29 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e97ced8f15e29c9c0800000000000000
-      internalID: -3906540272164616290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cloak walk front_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6008776e004eadf20800000000000000
-      internalID: 3448319157223260166
+      spriteID: 8f428b68bb57662d0800000000000000
+      internalID: -3285809429840648968
       vertices: []
       indices: 
       edges: []
