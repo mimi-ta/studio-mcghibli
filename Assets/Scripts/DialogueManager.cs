@@ -21,6 +21,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue) {
         Debug.Log("Starting conversation with " + dialogue.name);
         animator.SetBool("isOpen", true);
+        DisplayBiggerDialogueBox();
 
         nameText.text = dialogue.name;
         sentences.Clear();
@@ -31,6 +32,21 @@ public class DialogueManager : MonoBehaviour
 
         DisplayNextSentence();
     }
+
+    public void DisplayBiggerDialogueBox() {
+        if (animator.GetBool("isOpen") == true) {
+            Debug.Log("isOpen is true.");
+            StopAllCoroutines();
+            StartCoroutine(Wait(0.5F));
+            animator.SetBool("isFullSizeTime", true);
+            Debug.Log("isFullSizeTime is true.");
+        }
+    }
+
+    IEnumerator Wait(float time) {
+        yield return new WaitForSeconds(time);
+    }
+
     public void ContinueBtn()
     {
         if (dialogueText.text != crntSentence)
@@ -63,6 +79,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue() {
         Debug.Log("End of conversation.");
+        animator.SetBool("isFullSizeTime", false);
         animator.SetBool("isOpen", false);
     }
 }
