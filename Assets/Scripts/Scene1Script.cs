@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-
-public class ImgFade : MonoBehaviour
+using UnityEngine.SceneManagement;
+public class Scene1Script : MonoBehaviour
 {
 
     // the image you want to fade, assign ior
@@ -23,11 +23,14 @@ public class ImgFade : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > length + delay && !dialogueTriggeredFlag)
         {
-            Debug.Log("hi");
             FindObjectOfType<DialogueTrigger>().TriggerDialogue();
             dialogueTriggeredFlag = true;
         }
 
+        if (timer > length * 3)
+        {
+            StartCoroutine(FadeImage(true));
+        }
     }
 
     IEnumerator FadeImage(bool fadeAway)
@@ -36,12 +39,16 @@ public class ImgFade : MonoBehaviour
         if (fadeAway)
         {
             // loop over 1 second backwards
+            FindObjectOfType<DialogueManager>().EndDialogue();
             for (float i = 1; i >= 0; i -= Time.deltaTime/length)
             {
                 // set color with i as alpha
+                Debug.Log(i);
                 img.color = new Color(1, 1, 1, i);
                 yield return null;
             }
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         // fade from transparent to opaque
         else
