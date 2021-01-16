@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: e0a04d07d706a4d4cadbe8be9663a889
+=======
 guid: d1313edfaada910488ef020b6625464f
+>>>>>>> 785c236c2083cff509c491ad365c684baab8b3e2
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -72,7 +76,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+  spritePixelsToUnits: 100
+=======
   spritePixelsToUnits: 16
+>>>>>>> 785c236c2083cff509c491ad365c684baab8b3e2
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -91,7 +99,11 @@ TextureImporter:
     maxTextureSize: 64
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
+    textureCompression: 1
+=======
     textureCompression: 2
+>>>>>>> 785c236c2083cff509c491ad365c684baab8b3e2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,7 +115,11 @@ TextureImporter:
     maxTextureSize: 64
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
+    textureCompression: 1
+=======
     textureCompression: 2
+>>>>>>> 785c236c2083cff509c491ad365c684baab8b3e2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0

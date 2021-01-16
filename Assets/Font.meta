@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Animation/Dialogue.meta
+guid: 3a557780e97e03a45ac5de3f9e253708
+=======
 guid: cbbba309597e2d14c8d92c9f1a0a4eee
+>>>>>>> 785c236c2083cff509c491ad365c684baab8b3e2:Assets/Font.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
