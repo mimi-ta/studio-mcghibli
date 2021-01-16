@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
 
     private Queue<string> sentences;
+    private string crntSentence;
  
     // Start is called before the first frame update
     void Start() {
@@ -30,16 +31,25 @@ public class DialogueManager : MonoBehaviour
 
         DisplayNextSentence();
     }
+    public void ContinueBtn()
+    {
+        if (dialogueText.text != crntSentence)
+        {
+            StopAllCoroutines();
+            dialogueText.text = crntSentence;
+        }
+        else DisplayNextSentence();
+    }
 
     public void DisplayNextSentence() {
         if (sentences.Count == 0) {
             EndDialogue();
             return;
         }
-        string sentence = sentences.Dequeue();
+        crntSentence = sentences.Dequeue();
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
-        Debug.Log(sentence);
+        StartCoroutine(TypeSentence(crntSentence));
+        Debug.Log(crntSentence);
     }
 
     IEnumerator TypeSentence(string sentence) {
