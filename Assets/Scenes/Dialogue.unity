@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 188508583}
   - component: {fileID: 188508585}
   - component: {fileID: 188508584}
+  - component: {fileID: 188508586}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -200,13 +201,14 @@ RectTransform:
   m_Children:
   - {fileID: 409590370}
   - {fileID: 788324725}
+  - {fileID: 395742460}
   m_Father: {fileID: 1924916278}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0039749, y: 74.9}
-  m_SizeDelta: {x: 732.00037, y: 262.1153}
+  m_AnchoredPosition: {x: 0.8, y: 68.2}
+  m_SizeDelta: {x: 680.0188, y: 248.70071}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &188508584
 MonoBehaviour:
@@ -245,6 +247,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188508582}
   m_CullTransparentMesh: 0
+--- !u!95 &188508586
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188508582}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b9d7cf6b5c6e0409a8f527d161e88491, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &395742459
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,18 +292,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395742459}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 451064515}
-  m_Father: {fileID: 1924916278}
+  m_Father: {fileID: 188508583}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 244.08, y: -23}
-  m_SizeDelta: {x: 243.83234, y: 103.772385}
+  m_AnchoredPosition: {x: 230.66, y: -86.717}
+  m_SizeDelta: {x: 186.82019, y: 75.26633}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &395742461
 MonoBehaviour:
@@ -326,7 +347,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 395742462}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 428838118}
+        m_MethodName: DisplayNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &395742462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,7 +430,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100.8, y: 34}
+  m_AnchoredPosition: {x: -69, y: 34}
   m_SizeDelta: {x: 491.03882, y: 134.48581}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &409590371
@@ -433,7 +465,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Juicey
+  m_Text: NPC Name
 --- !u!222 &409590372
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -471,6 +503,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f34a6325363f45d4b693894f9973d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 409590371}
+  dialogueText: {fileID: 788324726}
+  animator: {fileID: 188508586}
 --- !u!4 &428838119
 Transform:
   m_ObjectHideFlags: 0
@@ -597,8 +632,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.8943, y: -52}
-  m_SizeDelta: {x: 688.8502, y: 137.769}
+  m_AnchoredPosition: {x: 4.8, y: -41.6}
+  m_SizeDelta: {x: 638.5454, y: 131.06169}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &788324726
 MonoBehaviour:
@@ -632,7 +667,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hi! My name is Juicey Poussey uwu <3
+  m_Text: NPC dialogue
 --- !u!222 &788324727
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -960,7 +995,6 @@ RectTransform:
   m_Children:
   - {fileID: 188508583}
   - {fileID: 2131172374}
-  - {fileID: 395742460}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
