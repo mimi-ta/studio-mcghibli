@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     float vertical;
 
     public float speed = 20.0f;
+    public float diagonalMultiplier = 1.0f;
     public bool hasCloak = false;
 
     bool movingVert = false;
@@ -43,12 +44,21 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
         }
 
+        if (horizontal != 0 && vertical != 0)
+        {
+            diagonalMultiplier = 0.7f;
+        }
+        else 
+        {
+            diagonalMultiplier = 1.0f;
+        }
+
         animator.SetBool("hasCloak", hasCloak);
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * speed, vertical * speed);
+        rb.velocity = new Vector2(horizontal * speed * diagonalMultiplier, vertical * speed * diagonalMultiplier );
     }
 
 
