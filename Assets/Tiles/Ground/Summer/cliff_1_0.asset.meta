@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Tiles/Ground/Summer/cliff_1_0.asset.meta
 guid: e329440620ff24a429aa7b26c797ee44
 NativeFormatImporter:
+=======
+guid: 348d70aed858f438db7927098fbdee1f
+folderAsset: yes
+DefaultImporter:
+>>>>>>> 96bd94326d709a92063975e100b88fffc72f66c9:Assets/Scenes/Scenes Folder/1 - 10.meta
   externalObjects: {}
   mainObjectFileID: 0
   userData: 
