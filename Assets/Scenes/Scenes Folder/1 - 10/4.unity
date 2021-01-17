@@ -1357,11 +1357,11 @@ RectTransform:
   m_Children:
   - {fileID: 305180692}
   m_Father: {fileID: 476336869}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 131, y: -36}
+  m_AnchoredPosition: {x: 131, y: -24.07}
   m_SizeDelta: {x: 114.51073, y: 32.041595}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &180523173
@@ -2488,6 +2488,7 @@ RectTransform:
   m_Children:
   - {fileID: 1743865994}
   - {fileID: 1186241957}
+  - {fileID: 2028229442}
   - {fileID: 180523172}
   - {fileID: 1985696150}
   - {fileID: 688105227}
@@ -2654,7 +2655,7 @@ RectTransform:
   m_Children:
   - {fileID: 355761618}
   m_Father: {fileID: 476336869}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3523,7 +3524,7 @@ RectTransform:
   m_Children:
   - {fileID: 242530584}
   m_Father: {fileID: 476336869}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3573,8 +3574,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: AlternativeBtn
+      - m_Target: {fileID: 2028229441}
+        m_MethodName: option4b
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7289,6 +7290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1290616050}
   - component: {fileID: 1290616049}
+  - component: {fileID: 1290616051}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -7326,6 +7328,18 @@ Transform:
   m_Father: {fileID: 1709783842}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1290616051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290616048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8f199752a213948bdae6b75f67a6ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1368355467
 GameObject:
   m_ObjectHideFlags: 0
@@ -10530,7 +10544,7 @@ RectTransform:
   m_Children:
   - {fileID: 61304629}
   m_Father: {fileID: 476336869}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10580,8 +10594,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: AlternativeBtn
+      - m_Target: {fileID: 2028229441}
+        m_MethodName: option4a
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10989,3 +11003,46 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &2028229440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2028229442}
+  - component: {fileID: 2028229441}
+  m_Layer: 0
+  m_Name: Dialog Options
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2028229441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028229440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8f199752a213948bdae6b75f67a6ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2028229442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028229440}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -348.7345, y: -134.33427, z: -2.8115234}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 476336869}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
