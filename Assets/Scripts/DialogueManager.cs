@@ -61,11 +61,26 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadScene(AlternativeSceneName);
     }
 
-    public void DisplayNextSentence() {
-        if (sentences.Count == 0) {
-            GameObject obj = GameObject.Find("AlternativeButton");
-            if (obj)
-            {
+    private void DisableContinueButton() {
+        GameObject obj = GameObject.Find("ContinueButton");
+        if (obj) {
+            Button objBtn = obj.GetComponentInChildren<Button>();
+            
+            if (objBtn) {
+                objBtn.enabled = false;
+                obj.GetComponentInChildren<Text>().enabled = false;
+            }
+        }
+    }
+
+    private void EnableAltButton(string name) {
+        GameObject obj = GameObject.Find(name);
+            if (obj) {
+
+                if (name.Equals("2")) {
+                    DisableContinueButton();
+                }
+                
                 Button objBtn = obj.GetComponentInChildren<Button>();
                 if (!objBtn.isActiveAndEnabled)
                 {
@@ -75,11 +90,15 @@ public class DialogueManager : MonoBehaviour
                 {
                     EndDialogue();
                 }
-            } else
-            {
-                EndDialogue();
             }
+        return;
+    }
 
+    public void DisplayNextSentence() {
+        if (sentences.Count == 0) {    
+            EnableAltButton("1");
+            EnableAltButton("2");
+            EnableAltButton("3");
             return;
         }
         crntSentence = sentences.Dequeue();
