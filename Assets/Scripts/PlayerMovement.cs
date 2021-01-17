@@ -42,6 +42,15 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
         }
 
+        if (horizontal == 0) 
+        {
+            animator.SetFloat("Horizontal", 0);
+        }
+        if (vertical == 0)
+        {
+            animator.SetFloat("Vertical", 0);
+        }
+
         if (horizontal != 0 && vertical != 0)
         {
             diagonalMultiplier = 0.7f;
