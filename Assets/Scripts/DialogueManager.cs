@@ -94,16 +94,28 @@ public class DialogueManager : MonoBehaviour
         return;
     }
 
-    public void DisplayNextSentence() {
-        if (sentences.Count == 0) {    
-            EnableAltButton("1");
-            EnableAltButton("2");
-            EnableAltButton("3");
-            return;
+    public void DisplayNextSentence()
+    {
+        if (sentences.Count == 0)
+        {
+            if (GameObject.Find("ContinueButton"))
+            {
+                EndDialogue();
+            }
+            else
+            {
+                EnableAltButton("1");
+                EnableAltButton("2");
+                EnableAltButton("3");
+                return;
+            }
         }
-        crntSentence = sentences.Dequeue();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(crntSentence));
+        else
+        {
+            crntSentence = sentences.Dequeue();
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(crntSentence));
+        }
     }
 
     IEnumerator TypeSentence(string sentence) {
