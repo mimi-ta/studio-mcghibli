@@ -1154,6 +1154,7 @@ MonoBehaviour:
     sentences:
     - Hi! My name is Juicey Poussey uwu <3 :p
     - Nice to meet you! >_<
+  triggerOnStart: 0
 --- !u!114 &778039548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2560,7 +2561,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -6964896174607277356, guid: c154649ca2b661f40b087b3db0158818,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
