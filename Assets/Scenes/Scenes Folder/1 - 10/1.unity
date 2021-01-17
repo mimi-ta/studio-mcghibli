@@ -945,7 +945,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: ...
+    name: 
     sentences:
-    - ...where am I?
+    - ...
+    - ... where am I?
   triggerOnStart: 0
