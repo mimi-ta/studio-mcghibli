@@ -65,7 +65,7 @@ public class DialogOptionsToScene : MonoBehaviour
     }
     public void option20a()
     {
-        SceneManager.LoadScene(sceneName: "21");
+        FindObjectOfType<DialogueManager>().EndDialogue();
     }
     public void option20b()
     {
@@ -78,7 +78,7 @@ public class DialogOptionsToScene : MonoBehaviour
     }
     public void option21b()
     {
-        SceneManager.LoadScene(sceneName: "24");
+        FindObjectOfType<DialogueManager>().EndDialogue();
     }
     public void option24a()
     {
@@ -86,7 +86,7 @@ public class DialogOptionsToScene : MonoBehaviour
     }
     public void option24b()
     {
-        SceneManager.LoadScene(sceneName: "27");
+        FindObjectOfType<DialogueManager>().EndDialogue();
     }
     public void option32a()
     {
