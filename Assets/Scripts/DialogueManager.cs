@@ -14,12 +14,11 @@ public class DialogueManager : MonoBehaviour
     private string crntSentence;
  
     // Start is called before the first frame update
-    void Start() {
+    void Awake() {
         sentences = new Queue<string>();
     }
 
     public void StartDialogue(Dialogue dialogue) {
-        Debug.Log("Starting conversation with " + dialogue.name);
         animator.SetBool("isOpen", true);
         DisplayBiggerDialogueBox();
 
@@ -35,11 +34,9 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayBiggerDialogueBox() {
         if (animator.GetBool("isOpen") == true) {
-            Debug.Log("isOpen is true.");
             StopAllCoroutines();
             StartCoroutine(Wait(0.5F));
             animator.SetBool("isFullSizeTime", true);
-            Debug.Log("isFullSizeTime is true.");
         }
     }
 
@@ -78,7 +75,6 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void EndDialogue() {
-        Debug.Log("End of conversation.");
         animator.SetBool("isFullSizeTime", false);
         animator.SetBool("isOpen", false);
     }
