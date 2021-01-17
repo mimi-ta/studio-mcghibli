@@ -2808,17 +2808,16 @@ MonoBehaviour:
   dialogue:
     name: ' '
     sentences:
-    - You travel with the witch through the forest, occasionally pausing to pick
-      some flowers.
+    - 'You travel with the witch through the forest, '
+    - occasionally pausing to pick some flowers.
     - The witch takes them to try to make you a flower crown, but fails miserably.
     - "Caesar: \u201CIs it meant to look like a blob?\u201D"
-    - The blob-like mass of flowers deflates as if insulted.
     - "Witch: \u201CIt was meant to look like a crown\u2026\u201D"
     - "She sighs and tosses it away, grumbling over something like \u201Cart is hard\u201D"
-    - As the two of you walk, you come across a creek. The sound of rushing water
-      fills your ears as you approach it.
-    - "Caesar: \u201CSo how should we-\u201D"
-    - The witch is gone.
+    - The blob-like mass of flowers deflates as if insulted.
+    - 'As the two of you walk, you come across a creek. '
+    - 'The sound of rushing water fills your ears as you approach it. '
+    - "Caesar: \u201CSo how should we-\u201D The witch is gone."
     - You look around, confused, seeing her at the other side of the creek.
     - "Witch: \u201CSorry! I can\u2019t swim real well. Magic does have its perks!\u201D"
     - How should you cross?

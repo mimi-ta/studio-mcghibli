@@ -249,6 +249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 2138374483}
   dialogueText: {fileID: 1637711339}
+  AlternativeSceneName: 
   animator: {fileID: 53815542}
 --- !u!4 &324611554
 Transform:
@@ -2978,15 +2979,16 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - As you slowly wade through the water, you feel a deeper portion in the middle.
+    - 'As you slowly wade through the water, '
+    - you feel a deeper portion in the middle.
     - "\u201CSwim across!\u201D The witch yells out to you."
-    - "There isn't much else you can do, unless you\u2019re somehow able to phase
-      in and out of existence?"
-    - "That would be cool. But sadly, it isn\u2019t an option. If it was, we wouldn't
-      be here!"
-    - You start to swim, but the current is stronger than you expected.
-    - You hear the witch yell out to you, but the water sweeps you away as the world
-      slowly goes black.
+    - There isn't much else you can do,
+    - "unless you\u2019re somehow able to phase in and out of existence? "
+    - "That would be cool. But sadly, it isn\u2019t an option."
+    - 'If it was, we wouldn''t be here! '
+    - 'You start to swim, but the current is stronger than you expected. '
+    - 'You hear the witch yell out to you, '
+    - but the water sweeps you away as the world slowly goes black.
   triggerOnStart: 1
 --- !u!1 &1368355467
 GameObject:

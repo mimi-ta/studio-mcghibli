@@ -2068,6 +2068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1567756403}
   dialogueText: {fileID: 1927222702}
+  AlternativeSceneName: 
   animator: {fileID: 289408199}
 --- !u!4 &971810542
 Transform:
@@ -5023,11 +5024,11 @@ MonoBehaviour:
     - 'You shake your head. You should probably get going. '
     - "You\u2019ll never find your mom if you just laze about after all."
     - The witch finishes her tea as the two of you set off once more.
-    - 'It takes what feels like an hour or two, but the two of you eventually come
-      across a cute little cottage, '
+    - 'It takes what feels like an hour or two, '
+    - 'but the two of you eventually come across a cute little cottage, '
     - a wolf out and about outside, dragging some logs into the cottage.
-    - "Wolf: \u201COh! Greetings, travellers! I was just about to get some lunch
-      ready\u2026 would you like to join?\u201D"
+    - "Wolf: \u201COh! Greetings, travellers! "
+    - "I was just about to get some lunch ready\u2026 would you like to join?\u201D"
   triggerOnStart: 1
 --- !u!114 &1539258932
 MonoBehaviour:
