@@ -5343,6 +5343,8 @@ MonoBehaviour:
       Where you had left it."
     - "The current in the water is far to strong for you to swim in\r."
     - As you turn around, you just barely miss the snapping of hungry jaws.
+    - "The wolf is close, you can practically smell his breath.\r\n\u201CI think
+      I\u2019m due for a nice breakfast.\u201D\r\n"
   triggerOnStart: 1
 --- !u!114 &1336527431
 MonoBehaviour:
