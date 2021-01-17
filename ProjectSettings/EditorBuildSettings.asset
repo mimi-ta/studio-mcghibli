@@ -18,6 +18,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Credits.unity
     guid: 63afb8d593699b242b67c97cec9677f4
   - enabled: 1
+    path: Assets/Scenes/Scenes Folder/1 - 10/1.unity
+    guid: cbc9ba88f6095491389882e3efc8588f
+  - enabled: 1
+    path: Assets/Scenes/Scenes Folder/1 - 10/2.unity
+    guid: 1c533704ac59940999ef8816f5dc43e6
+  - enabled: 1
+    path: Assets/Scenes/Scenes Folder/1 - 10/3.unity
+    guid: da1612cd7f70f460ab127d7ccf0892c6
+  - enabled: 1
+    path: Assets/Scenes/Scenes Folder/1 - 10/3-dupl.unity
+    guid: ccd59b18911b042d293b61b8bb2df851
+  - enabled: 1
+    path: Assets/Scenes/Scenes Folder/1 - 10/4-dupl.unity
+    guid: 3d75aae06fdae4719b462ec7efb44048
+  - enabled: 1
+    path: Assets/Scenes/Scenes Folder/1 - 10/4.unity
+    guid: 8943486786bdd4e3f9b02192ed01cf42
+  - enabled: 1
+    path: Assets/Scenes/Scenes Folder/1 - 10/5.unity
+    guid: f2451cf0e914d4a16bbeb55e74ab1079
+  - enabled: 1
     path: Assets/Scenes/Scenes Folder/1 - 10/6.unity
     guid: 4993776593ed4174b9f9239edca18a88
   - enabled: 1
@@ -27,15 +48,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Scenes Folder/1 - 10/7.unity
     guid: 84a9aef8dd098ed46be73769c035e916
   - enabled: 1
-    path: Assets/Scenes/Scenes Folder/1 - 10/8.unity
-    guid: 9575a1042a9ae5f4fa1043ca377e161e
-  - enabled: 1
     path: Assets/Scenes/Scenes Folder/1 - 10/9.unity
     guid: b9b9fc00174db6e4eb2cc39f0f72ef85
+  - enabled: 1
+    path: Assets/Scenes/Scenes Folder/1 - 10/8.unity
+    guid: 561121b5419f6a648ae8034692c67713
   - enabled: 1
     path: Assets/Scenes/Scenes Folder/1 - 10/10.unity
     guid: b93f2f9af955f0d4bbe307863cc205fc
   - enabled: 1
     path: Assets/Scenes/Scenes Folder/11 - 20/14.unity
     guid: eef42c0c9abaeab48907195ce927e06f
+  - enabled: 1
+    path: Assets/Scenes/Scenes Folder/31 - 40/31.unity
+    guid: 9350ab09ff56a41f59c241dc28e5b9f9
   m_configObjects: {}
