@@ -2447,7 +2447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924102395}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.89, y: 3.03, z: 0}
+  m_LocalPosition: {x: 4.64, y: -3.02, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5349,26 +5349,20 @@ MonoBehaviour:
   dialogue:
     name: ' '
     sentences:
-    - "You search for any kind of beaver dam or log you can use to get across, but
-      nothing\u2019s there. From the other side, the witch points out a vine for
-      you to swing on."
-    - "Witch: \u201CSwing over! I\u2019m sure it\u2019ll be fun!\u201D"
-    - "\u201CBut I don\u2019t know how to swing!\u201D You cry back."
-    - "Witch: \u201CWell it\u2019s time to learn!\u201D"
-    - "Begrudgingly, you grab onto the vine with your teeth and walk back, dashing
-      forward.\nYou feel time stop and you swing over the late, the moon shining
-      down on you. You\u2019re like a superhero!"
-    - "Witch: \u201COh god watch out!\u201D"
-    - You look at her, confused, and feel an impact act you slam into the tree. Maybe
-      you should have looked where you were going?
-    - As you lay down groaning in pain, she sits next to you and pats your head,
-      giving yourself some time to collect yourself.
-    - "Witch: \u201CAt least it looked cool? I would give you a 9/10! Great swing,
-      just\u2026 a bad landing?\u201D"
-    - You groan in response.
-    - Maybe you should just go to sleep for the night.
-    - 'The two of you make the best makeshift beds you can, using leaves as pillows,
-      and eventually fall asleep. '
+    - "You wake up to the sun shining on your face as you slowly wake up, the witch
+      already up and drinking tea that she got from god knows where. You feel like
+      you had a dream last night, but you can\u2019t remember what..."
+    - "Witch: \u201COh, are you thirsty?\u201D"
+    - "You shake your head. You should probably get going. You\u2019ll never find
+      your mom if you just laze about after all. "
+    - 'The witch finishes her tea as the two of you set off once more.
+
+'
+    - It takes what feels like an hour or two, but the two of you eventually come
+      across a cute little cottage, a wolf out and about outside, dragging some logs
+      into the cottage.
+    - "Stranger: \u201COh! Greetings, travellers! I was just about to get some lunch
+      ready\u2026 would you like to join?\u201D"
   triggerOnStart: 1
 --- !u!1 &1709944800
 GameObject:
