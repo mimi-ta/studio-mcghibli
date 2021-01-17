@@ -152,14 +152,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.83137256, g: 0.654902, b: 0.654902, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ba458c1184541476091009c1abe64a66, type: 3}
+    m_Font: {fileID: 12800000, guid: 085271584e4eb47fc98e4924c3e322f1, type: 3}
     m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
@@ -196,8 +196,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.0097, y: -16}
-  m_SizeDelta: {x: 330.28735, y: 42.96811}
+  m_AnchoredPosition: {x: 0.0000047684, y: 0.0000011921}
+  m_SizeDelta: {x: 333.52032, y: 78.32333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &448300570
 GameObject:
@@ -2338,7 +2338,7 @@ MonoBehaviour:
     - "Where did you get that key from\u2026?"
     - "You don\u2019t remember having it before. Did you always have it with you?\r\n"
     - As you two walk over the bridge, you make up camp once again
-    - ' The witch doesn''t question it, so it must be fine right?'
+    - The witch doesn't question it, so it must be fine right?
     - You go to sleep, the memory of the paper the wolf showed you comes up.
     - You have a dream, or is it reality?
     - 'The words make no sense in your mind, and '
@@ -2346,7 +2346,7 @@ MonoBehaviour:
 
 '
     - The witch is gone.
-    - ...Head on over to the logs...
+    - ... Head on over to the logs ...
   triggerOnStart: 1
 --- !u!114 &1336527431
 MonoBehaviour:
@@ -5504,15 +5504,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.83137256, g: 0.654902, b: 0.654902, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ba458c1184541476091009c1abe64a66, type: 3}
-    m_FontSize: 15
+    m_Font: {fileID: 12800000, guid: 085271584e4eb47fc98e4924c3e322f1, type: 3}
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
