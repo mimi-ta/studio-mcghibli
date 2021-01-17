@@ -152,14 +152,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.83137256, g: 0.654902, b: 0.654902, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ba458c1184541476091009c1abe64a66, type: 3}
+    m_Font: {fileID: 12800000, guid: 085271584e4eb47fc98e4924c3e322f1, type: 3}
     m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
@@ -196,8 +196,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.0097, y: -16}
-  m_SizeDelta: {x: 330.28735, y: 42.96811}
+  m_AnchoredPosition: {x: 0.000013471, y: 0.0000021458}
+  m_SizeDelta: {x: 335.46008, y: 75.94429}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &448300570
 GameObject:
@@ -1480,7 +1480,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 6
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 21
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2693,9 +2693,8 @@ Tilemap:
   - m_RefCount: 3
     m_Data: {fileID: -2975975585428314506, guid: 18bc1377cc0887847a2ecbf3791c081d,
       type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -5004118558265696385, guid: 18bc1377cc0887847a2ecbf3791c081d,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 4
     m_Data: {fileID: 906180290038096102, guid: 18bc1377cc0887847a2ecbf3791c081d, type: 3}
   - m_RefCount: 2
@@ -2747,8 +2746,9 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: -8301895126933002795, guid: 18bc1377cc0887847a2ecbf3791c081d,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -5004118558265696385, guid: 18bc1377cc0887847a2ecbf3791c081d,
+      type: 3}
   - m_RefCount: 10
     m_Data: {fileID: 181941764470103314, guid: 18bc1377cc0887847a2ecbf3791c081d, type: 3}
   - m_RefCount: 1
@@ -3224,7 +3224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: aaaaaa
+    name: 
     sentences:
     - "You hear the sound, confused, until a sharp pain erupts in your stomach. There\u2019s
       blood everywhere.\r\nYou see the witch behind you, staring at you blankly as
@@ -6240,15 +6240,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.83137256, g: 0.654902, b: 0.654902, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ba458c1184541476091009c1abe64a66, type: 3}
-    m_FontSize: 15
+    m_Font: {fileID: 12800000, guid: 085271584e4eb47fc98e4924c3e322f1, type: 3}
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
