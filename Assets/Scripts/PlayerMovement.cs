@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     float horizontal;
     float vertical;
 
-    public float speed = 20.0f;
+    public float speed;
     public float diagonalMultiplier = 1.0f;
     public bool hasCloak = false;
 
@@ -25,42 +25,46 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
+        if (!FindObjectOfType<DialogueManager>().animator.GetBool("isOpen"))
+        {
+            horizontal = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxisRaw("Vertical");
 
-        //animator.SetFloat("Vertical", Input.GetAxis("Vertical"));
-        //animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+            //animator.SetFloat("Vertical", Input.GetAxis("Vertical"));
+            //animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
 
-        if (vertical > 0 || vertical < 0)
-        {
-            animator.SetFloat("Vertical", Input.GetAxis("Vertical"));
-            animator.SetFloat("Horizontal", 0);
-        }
-        else if (horizontal > 0 || horizontal < 0)
-        {
-            animator.SetFloat("Vertical", 0);
-            animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
-        }
+            if (vertical > 0 || vertical < 0)
+            {
+                animator.SetFloat("Vertical", Input.GetAxis("Vertical"));
+                animator.SetFloat("Horizontal", 0);
+            }
+            else if (horizontal > 0 || horizontal < 0)
+            {
+                animator.SetFloat("Vertical", 0);
+                animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+            }
 
-        if (horizontal == 0) 
-        {
-            animator.SetFloat("Horizontal", 0);
-        }
-        if (vertical == 0)
-        {
-            animator.SetFloat("Vertical", 0);
-        }
+            if (horizontal == 0)
+            {
+                animator.SetFloat("Horizontal", 0);
+            }
+            if (vertical == 0)
+            {
+                animator.SetFloat("Vertical", 0);
+            }
 
-        if (horizontal != 0 && vertical != 0)
-        {
-            diagonalMultiplier = 0.7f;
-        }
-        else 
-        {
-            diagonalMultiplier = 1.0f;
-        }
+            if (horizontal != 0 && vertical != 0)
+            {
+                diagonalMultiplier = 0.7f;
+            }
+            else
+            {
+                diagonalMultiplier = 1.0f;
+            }
 
-        animator.SetBool("hasCloak", hasCloak);
+            animator.SetBool("hasCloak", hasCloak);
+        } 
+       
     }
 
     private void FixedUpdate()
