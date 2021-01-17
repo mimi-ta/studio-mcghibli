@@ -3226,9 +3226,10 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - "You hear the sound, confused, until a sharp pain erupts in your stomach. There\u2019s
-      blood everywhere.\r\nYou see the witch behind you, staring at you blankly as
-      you fall down. \r\nBefore you can ask her why, the world goes black.\r\n"
+    - "You hear the sound, confused, until a sharp pain erupts in your stomach. \n"
+    - "There\u2019s blood everywhere.\r\n"
+    - "You see the witch behind you, staring at you blankly as you fall down. \r"
+    - "Before you can ask her why, the world goes black.\r"
   triggerOnStart: 1
 --- !u!114 &1336527431
 MonoBehaviour:
@@ -6429,6 +6430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1129665891}
   dialogueText: {fileID: 102711886}
+  AlternativeSceneName: 
   animator: {fileID: 973474782}
 --- !u!4 &1828569501
 Transform:

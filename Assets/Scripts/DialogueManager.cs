@@ -98,7 +98,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
-            if (GameObject.Find("ContinueButton"))
+            if (GameObject.Find("ContinueButton") && !(GameObject.Find("1") || GameObject.Find("2") || GameObject.Find("3")))
             {
                 EndDialogue();
             }
