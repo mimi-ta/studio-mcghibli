@@ -21,7 +21,7 @@ public class PlayerSceneController : MonoBehaviour
         switch (collision.gameObject.tag) 
         {
 
-            case "1a":
+            case "1a": Debug.Log("this works!");
                     break;
             case "2a":
                     break;
