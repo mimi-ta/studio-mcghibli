@@ -27,7 +27,7 @@ public class Scene1Script : MonoBehaviour
             dialogueTriggeredFlag = true;
         }
 
-        if (timer > length * 3)
+        if (timer > length * 2)
         {
             StartCoroutine(FadeImage(true));
         }
@@ -48,7 +48,7 @@ public class Scene1Script : MonoBehaviour
                 yield return null;
             }
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("2");
         }
         // fade from transparent to opaque
         else
