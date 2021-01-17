@@ -3712,7 +3712,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Simulate dialogue start
+  m_Text: 'Simulate dialogue start '
 --- !u!222 &1484238309
 CanvasRenderer:
   m_ObjectHideFlags: 0
