@@ -61,38 +61,44 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadScene(AlternativeSceneName);
     }
 
-    public void EnableAltButton(string buttonName) {
-        GameObject obj = GameObject.Find(buttonName);
-        if (obj)
-        {
+    private void DisableContinueButton() {
+        GameObject obj = GameObject.Find("ContinueButton");
+        if (obj) {
             Button objBtn = obj.GetComponentInChildren<Button>();
-            if (!objBtn.isActiveAndEnabled)
-            {
-                objBtn.enabled = true;
-                obj.GetComponentInChildren<Text>().enabled = true;
-            } else
-            {
-                EndDialogue();
+            
+            if (objBtn) {
+                objBtn.enabled = false;
+                obj.GetComponentInChildren<Text>().enabled = false;
             }
-        } else
-        {
-            EndDialogue();
         }
     }
 
-    public void DisplayNextSentence() {
-        if (sentences.Count == 0) {
-            GameObject continueBtnElement = GameObject.Find("ContinueButton");
-            
-            if (continueBtnElement) {
-                Button continueButton = continueBtnElement.GetComponentInChildren<Button>();
+    private void EnableAltButton(string name) {
+        GameObject obj = GameObject.Find(name);
+            if (obj) {
 
-                if (continueButton.enabled == true) {
-                    continueButton.enabled = false;
-                    continueButton.GetComponentInChildren<Text>().enabled = false;
+                if (name.Equals("2")) {
+                    DisableContinueButton();
+                }
+                
+                Button objBtn = obj.GetComponentInChildren<Button>();
+                if (!objBtn.isActiveAndEnabled)
+                {
+                    objBtn.enabled = true;
+                    obj.GetComponentInChildren<Text>().enabled = true;
+                } else
+                {
+                    EndDialogue();
                 }
             }
-            EnableAltButton("AlternativeButton");
+        return;
+    }
+
+    public void DisplayNextSentence() {
+        if (sentences.Count == 0) {    
+            EnableAltButton("1");
+            EnableAltButton("2");
+            EnableAltButton("3");
             return;
         }
         crntSentence = sentences.Dequeue();
