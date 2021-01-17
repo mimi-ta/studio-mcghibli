@@ -8,7 +8,6 @@ public class DialogueOnSceneEntry : MonoBehaviour
     void Start()
 
     {
-        Debug.Log("D T");
         FindObjectOfType<DialogueTrigger>().TriggerDialogue();
     }
 }

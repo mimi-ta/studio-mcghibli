@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
+    public string AlternativeSceneName;
 
     public Animator animator;
 
@@ -54,15 +56,36 @@ public class DialogueManager : MonoBehaviour
         else DisplayNextSentence();
     }
 
+    public void AlternativeBtn()
+    {
+        
+        SceneManager.LoadScene(AlternativeSceneName);
+    }
+
     public void DisplayNextSentence() {
         if (sentences.Count == 0) {
-            EndDialogue();
+            GameObject obj = GameObject.Find("AlternativeButton");
+            if (obj)
+            {
+                Button objBtn = obj.GetComponentInChildren<Button>();
+                if (!objBtn.isActiveAndEnabled)
+                {
+                    objBtn.enabled = true;
+                    obj.GetComponentInChildren<Text>().enabled = true;
+                } else
+                {
+                    EndDialogue();
+                }
+            } else
+            {
+                EndDialogue();
+            }
+
             return;
         }
         crntSentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(crntSentence));
-        Debug.Log(crntSentence);
     }
 
     IEnumerator TypeSentence(string sentence) {
