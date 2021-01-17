@@ -13,8 +13,6 @@ public class PlayerMovement : MonoBehaviour
     public float diagonalMultiplier = 1.0f;
     public bool hasCloak = false;
 
-    bool movingVert = false;
-    bool movingHori = false;
 
     public Animator animator;
 
