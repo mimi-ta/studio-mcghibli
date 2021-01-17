@@ -518,7 +518,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Programmers\n\nJason Beccherini\nVincent Bruzzese\nMarcus Phan\nMimi Ta\n\n\nCharacter
     Design\n\nMicaela Marcogliese\n\n\nEnvironement Design\n\nVictoria Solo\n\n\nStory\n\nKristina
-    Nikolaou\n\n\nMusic \n\nDavid Kroo"
+    Nikolaou\n\n\nMusic \n\nDavid Kroo\n\nStarry Background\n\nCreative Market"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
