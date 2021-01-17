@@ -5331,18 +5331,14 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - "As you wait, you hear the sound of a wolf howling and getting closer. \r\nYou
-      turn. It\u2019s the wolf from before.\r\n"
-    - 'Something in your mind screams at you to run, and so you do. You run for your
-      life, the wolf following you close behind.
-
-'
-    - " The chase brings you to the creek once more, but it\u2019s impossible. You
-      didn\u2019t turn back. There\u2019s no way you could be back here, right?\r"
     - "As you look for the vine you swung on, you notice it\u2019s on the other side.
       Where you had left it."
-    - "The current in the water is far to strong for you to swim in\r."
-    - As you turn around, you just barely miss the snapping of hungry jaws.
+    - 'The current in the water is far to strong for you to swim in
+
+      As you
+      turn around, you just barely miss the snapping of hungry jaws.
+
+'
     - "The wolf is close, you can practically smell his breath.\r\n\u201CI think
       I\u2019m due for a nice breakfast.\u201D\r\n"
   triggerOnStart: 1
@@ -8544,6 +8540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1129665891}
   dialogueText: {fileID: 102711886}
+  AlternativeSceneName: 
   animator: {fileID: 973474782}
 --- !u!4 &1828569501
 Transform:

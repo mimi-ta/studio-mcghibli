@@ -2664,27 +2664,26 @@ MonoBehaviour:
   dialogue:
     name: ' '
     sentences:
-    - "You search for any kind of beaver dam or log you can use to get across, but
-      nothing\u2019s there."
+    - 'You search for any kind of beaver dam or log you can use to get across,
+
+'
+    - "but nothing\u2019s there."
     - From the other side, the witch points out a vine for you to swing on.
     - "Witch: \u201CSwing over! I\u2019m sure it\u2019ll be fun!\u201D"
     - "\u201CBut I don\u2019t know how to swing!\u201D You cry back."
     - "Witch: \u201CWell it\u2019s time to learn!\u201D"
-    - Begrudgingly, you grab onto the vine with your teeth and walk back, dashing
-      forward.
-    - "You feel time stop and you swing over the late, the moon shining down on you.
-      You\u2019re like a superhero!"
-    - "Witch: \u201COh god watch out!\u201D"
-    - You look at her, confused, and feel an impact act you slam into the tree. Maybe
-      you should have looked where you were going?
-    - As you lay down groaning in pain, she sits next to you and pats your head,
-      giving yourself some time to collect yourself.
-    - "Witch: \u201CAt least it looked cool? I would give you a 9/10! Great swing,
-      just\u2026 a bad landing?\u201D"
+    - 'Begrudgingly, you grab onto the vine with your teeth and walk back, '
+    - dashing forward.
+    - 'You feel time stop and you swing over the late, '
+    - "the moon shining down on you. You\u2019re like a superhero! "
+    - Maybe you should have looked where you were going?
+    - 'As you lay down groaning in pain, she sits next to you '
+    - 'and pats your head, giving yourself some time to collect yourself. '
+    - "Witch: \u201CAt least it looked cool? I would give you a 9/10!"
     - You groan in response.
     - Maybe you should just go to sleep for the night
-    - 'The two of you make the best makeshift beds you can, using leaves as pillows,
-      and eventually fall asleep. '
+    - 'The two of you make the best makeshift beds you can, '
+    - using leaves as pillows, and eventually fall asleep.
   triggerOnStart: 1
 --- !u!114 &1172871750
 MonoBehaviour:
