@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 143146761}
   - component: {fileID: 143146760}
   m_Layer: 0
-  m_Name: DialogueManager
+  m_Name: DialogueManager1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -337,7 +337,7 @@ GameObject:
   - component: {fileID: 493732343}
   - component: {fileID: 493732342}
   m_Layer: 5
-  m_Name: AlternativeButton
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
