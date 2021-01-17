@@ -2856,7 +2856,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Drown >>
+  m_Text: Continue
 --- !u!222 &705454142
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5310,7 +5310,7 @@ Transform:
   - {fileID: 1264775557}
   - {fileID: 2142198620}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1264775556
 GameObject:
@@ -5324,6 +5324,7 @@ GameObject:
   - component: {fileID: 1264775560}
   - component: {fileID: 1264775559}
   - component: {fileID: 1264775558}
+  - component: {fileID: 1264775562}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5411,6 +5412,26 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1264775562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264775556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 299f25595de124828af663e6935485b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: aaaaaa
+    sentences:
+    - test123
+    - test123
+    - 44124
+    - 12412
+  triggerOnStart: 1
 --- !u!1 &1368355467
 GameObject:
   m_ObjectHideFlags: 0
@@ -8424,6 +8445,7 @@ MonoBehaviour:
   player: {fileID: 924102401}
   width: 1
   height: 0
+<<<<<<< HEAD
 --- !u!1 &2088443086
 GameObject:
   m_ObjectHideFlags: 0
@@ -8505,6 +8527,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> 856a6b48dad5823fa4c5b58ebbdf1239c1b9315a
 --- !u!1 &2138374482
 GameObject:
   m_ObjectHideFlags: 0
